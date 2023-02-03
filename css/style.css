@@ -44,6 +44,7 @@
 
 .logo img{
     width: 120px;
+    margin-left: 20px;
 }
 
 .menu-icons{
@@ -55,4 +56,25 @@
 .menu-icons img{
     width: 20px;
     margin-left: 20px;
+}
+
+button{
+    padding: 10px;
+    background-color:rgb(0,0,0,0);
+    border:0px;
+    border-radius: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+button:hover{
+    background-color: darkgray;
+}
+
+.inklineheader{
+    text-align: center;
+    font-size: 64px;
+    font-weight: bold;
+    margin-top: 100px;
+    color: white;
 }
