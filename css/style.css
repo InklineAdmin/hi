@@ -6,25 +6,25 @@
 
 
 .banner {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     position: relative;
     overflow: hidden;
 }
 .slider {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     position: absolute;
     top: 0;
 }
 
 #slideImg{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
 .overlay{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
     position: absolute;
@@ -45,17 +45,12 @@
 .logo img{
     width: 120px;
     margin-left: 20px;
+    cursor: pointer;
 }
 
-.menu-icons{
-    flex: 1;
-    text-align: right;
-    
-}
-
-.menu-icons img{
-    width: 20px;
-    margin-left: 20px;
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
 }
 
 button{
@@ -77,4 +72,22 @@ button:hover{
     font-weight: bold;
     margin-top: 100px;
     color: white;
+    
+}
+
+nav{
+flex: 1;
+text-align: right;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
 }
