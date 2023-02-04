@@ -178,10 +178,10 @@ button:hover{
     flex-basis: 60%;
     display: flex;
     align-items: center;
-    transform: translateX(250px) ;
 }
 
 .col-2 .controller{
     width: 30%;
+    margin-left: 300px;
 }
 
