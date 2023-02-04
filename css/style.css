@@ -163,3 +163,13 @@ button:hover{
     justify-content: space-between;
 }
 
+.col-1::after{
+    content: '';
+    width: 10px;
+    height: 80%;
+    background: linear-gradient(to left, #FF9AA2, #FFB7B2, #FFDAC1, #E2F0CB, #B5EAD7 , #C7CEEA);
+    position: absolute;
+    left: -20px;
+    top: 8px;
+}
+
