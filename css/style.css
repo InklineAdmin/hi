@@ -7,7 +7,7 @@
 
 .banner {
     width: 100wh;
-    height: 100vh;
+    height: 75%;
     position: relative;
     overflow: hidden;
 }
@@ -21,12 +21,12 @@
 #slideImg{
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 75%;
 }
 
 .overlay{
     width: 100vw;
-    height: 100vh;
+    height: 75vh;
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
     position: absolute;
     top: 0;
@@ -108,3 +108,58 @@ color: #ffffff;
     background-position: center;
     font-family: "Kaushan Script";
 }
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 150px;
+}
+
+.col-1 h2{
+    color: orangered;
+    margin-bottom: 30px;
+}
+
+.col-1 h3{
+    font-family: cambria;
+}
+
+.pHomeInkline{
+text-align: justify;
+}
+
+button{
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    border-radius: 10px;
+    outline: none;
+    color: #000;
+    background: linear-gradient(to right, rgb(255, 15, 15), rgb(243, 175, 49), yellow, rgb(40, 206, 40), rgb(82, 82, 255), rgb(168, 46, 255), violet);
+    transition: width 0.5s;
+}
+
+button img{
+    width: 30px;
+    display: none;
+    transform: scaleX(-1);
+}
+
+button:hover img{
+    display: block;
+}
+
+button:hover{
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
