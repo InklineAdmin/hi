@@ -173,3 +173,15 @@ button:hover{
     top: 8px;
 }
 
+.col-2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    transform: translateX(250px) ;
+}
+
+.col-2 .controller{
+    width: 30%;
+}
+
