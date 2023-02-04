@@ -1,12 +1,12 @@
 *{
     margin: 0;
     padding: 0;
-    Font-family: arial;
+    Font-family: 'Arial';
 }
 
 
 .banner {
-    width: 100vw;
+    width: 100wh;
     height: 100vh;
     position: relative;
     overflow: hidden;
@@ -52,6 +52,7 @@
 .menu-icon{
     width: 30px;
     cursor: pointer;
+    transform: translateX(-10px);
 }
 
 button{
@@ -69,7 +70,7 @@ button:hover{
 
 .inklineheader{
     text-align: center;
-    font-size: 3vw;
+    font-size: 4vw;
     font-weight: bold;
     margin-top: 100px;
     color: white;
@@ -80,6 +81,7 @@ nav{
 flex: 1;
 text-align: right;
 }
+
 
 nav ul li{
     list-style: none;
@@ -98,5 +100,11 @@ color: #ffffff;
 }
 
 .inklineheader{
-    font-family: 'Raleway';
+    background-image: linear-gradient(to left, #FF9AA2, #FFB7B2, #FFDAC1, #E2F0CB, #B5EAD7 , #C7CEEA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 30vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Kaushan Script";
 }
