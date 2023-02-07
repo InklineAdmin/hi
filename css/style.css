@@ -314,3 +314,33 @@ button:hover{
     transition: 0.5s;
 }
 
+.thirdSlide{
+    text-align: center;
+}
+
+.thirdSlideRow{
+    display: flex;
+}   
+
+.thirdSlideColumn{
+    flex:1;
+    padding: 10px;
+    margin: 10px;
+}
+
+.thirdSlideImages{
+    height: 10vw;
+}
+
+@media (max-width: 600px) {
+
+    .thirdSlideColumn {
+      flex: 50%;
+      margin: 0px;
+    }
+
+    .thirdSlideImages {
+        flex: 50%;
+        margin: 0px;
+      }
+  }
