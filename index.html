@@ -15,7 +15,7 @@
                 <div class="overlay">
                         <div class="navbar">
                                 <div class="logo">
-                                        <img src="logos/inkline logo.png">
+                                        <img src="logos/inkline logo black.png">
                                 </div>
                         </div>
                         <div class="navbar1">
@@ -28,6 +28,9 @@
                                         </ul>
                                 </nav>
                                 <img src="logos/menu.png" class="menu-icon" onclick="togglemenu()">
+                        </div>
+                        <div class="hakdog">
+                                <p><!-- for background of logo and menu -->‎ </p>
                         </div>
                         <p class="inklineheader">Let's Print<br>Brilliant Life</p>
                 </div>
@@ -94,24 +97,95 @@
         <h1>WHAT WE DO</h1>
 <br>
         <div class="thirdSlideRow">
-                <div class="thirdSlideColumn" style="background-color:lavender;">
+                <div class="thirdSlideColumn">
                         <img src="images/fuji2263.png" class="thirdSlideImages">
                         <p>FREE USE OF PRINTERS</p>
                 </div>
-                <div class="thirdSlideColumn" style="background-color:lavenderblush;">
+                <div class="thirdSlideColumn">
                         <img src="images/toners.png" class="thirdSlideImages">
                         <p>HIGH QUALITY TONER</p>
                 </div>
-                <div class="thirdSlideColumn" style="background-color:lavender;">
+                <div class="thirdSlideColumn">
                         <img src="images/compatible premium ink.png" class="thirdSlideImages">
                         <p>COMPATIBLE PREMIUM INK</p>
                 </div>
-                <div class="thirdSlideColumn" style="background-color:lavenderblush;">
+                <div class="thirdSlideColumn">
                         <img src="images/free delivery.png" class="thirdSlideImages">
                         <p>FREE DELIVERY</p>
                 </div>
         </div>
 </div>
+
+
+
+<div class="fourthSlide">
+        <h1>WHY CHOOSE US?</h1>
+<br>
+        <div class="thirdSlideRow">
+        <div class="fourthSlideColumn">
+                <img src="images/quality.png" class="fourthSlideImages">
+                <p>QUALITY</p>
+        </div>
+
+        <div class="fourthSlideColumn">
+                <img src="images/earth.png" class="fourthSlideImages">
+                <p>SAVE MOTHER EARTH</p>
+        </div>
+
+        <div class="fourthSlideColumn">
+                <img src="images/hand.png" class="fourthSlideImages">
+                <p>COMMITMENT</p>
+        </div>
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Messenger Chat plugin Code -->
+<div id="fb-root"></div>
+
+<!-- Your Chat plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "100213436331477");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v16.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 
 
 </body>
