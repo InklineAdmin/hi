@@ -35,10 +35,19 @@
 .navbar{
     display: flex;
     align-items: center;
-    margin-top: 10px;
     margin-right: 20px;
     position: fixed;
-    
+    z-index: 99;
+}
+
+.hakdog{
+    top:0;
+    background: linear-gradient(to left, #FF9AA2, #FFB7B2, #FFDAC1, #E2F0CB, #B5EAD7 , #C7CEEA);
+    padding: 23px;
+    width: 100vw;
+    text-align: center;
+    z-index: 95;
+    position: fixed
 }
 
 .navbar1{
@@ -48,16 +57,19 @@
     margin-right: 20px;
     right:0;
     position:fixed;
+    z-index: 99;
 }
-    
+
 .logo{
-    flex-basis: 15%;
+    flex:1;
+    z-index: 99;
 }
 
 .logo img{
     width: 120px;
     margin-left: 20px;
     cursor: pointer;
+    z-index: 99;
 }
 
 .menu-icon{
@@ -85,7 +97,6 @@ button:hover{
     font-weight: bold;
     margin-top: 100px;
     color: white;
-    
 }
 
 nav{
@@ -196,14 +207,13 @@ button:hover{
     margin-left: 300px;
 }
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width: 700px){
     nav ul{
-        width: 100%;
+        width: 100vw;
         background: linear-gradient(to left, #FF9AA2, #FFB7B2, #FFDAC1, #E2F0CB, #B5EAD7 , #C7CEEA);
         position: absolute;
-        top: 75px;
-        right: 0;
-        z-index: 2;
+        top: 50px;
+        right: -20;
     }
 
     nav ul li{
@@ -314,18 +324,21 @@ button:hover{
     transition: 0.5s;
 }
 
+
+
 .thirdSlide{
     text-align: center;
+    margin-top: 20vw;
 }
 
 .thirdSlideRow{
     display: flex;
+    background-size: 1px;
 }   
 
 .thirdSlideColumn{
     flex:1;
     padding: 10px;
-    margin: 10px;
 }
 
 .thirdSlideImages{
@@ -339,8 +352,41 @@ button:hover{
       margin: 0px;
     }
 
-    .thirdSlideImages {
-        flex: 50%;
-        margin: 0px;
-      }
+    .thirdSlideRow{
+        flex-wrap: wrap;
+    }
+
+  }
+
+
+.fourthSlide{
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.fourthSlideRow{
+    display: flex;
+    background-size: 1px;
+}   
+
+.fourthSlideColumn{
+    flex:50%;
+    padding: 10px;
+}
+
+.fourthSlideImages{
+    height: 10vw;
+}
+
+@media (max-width: 600px) {
+
+    .fourthSlideColumn {
+      flex: 50%;
+      margin: 0px;
+    }
+
+    .fourthSlideRow{
+        flex-wrap: wrap;
+    }
+
   }
