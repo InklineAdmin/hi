@@ -1,5 +1,6 @@
 *{
     font-family: Arial;
+    margin:0;
 }
 
 .headerBackground{
@@ -15,7 +16,7 @@
     text-align: center;
     left: 0;
     width: 100vw;
-    padding: 5px;
+    padding: 23px;
     background: linear-gradient(to left, #FF9AA2, #FFB7B2, #FFDAC1, #E2F0CB, #B5EAD7 , #C7CEEA);
 }
 
@@ -44,6 +45,7 @@
 .menu-icon{
     width: 30px;
     cursor: pointer;
+    margin-top: 10px;
     transform: translateX(-10px);
 }
 
@@ -101,14 +103,21 @@ color: #ffffff;
 }
 
 
+.background{
+position: relative;
+overflow: hidden;
 
-.slideImage{
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left:0;
-    z-index: 1;
 }
+
+#slideImage{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    background-position: center;
+}
+
+
+
 
 
 
