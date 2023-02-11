@@ -1,0 +1,114 @@
+*{
+    font-family: Arial;
+}
+
+.headerBackground{
+    top:0;
+    left:0;
+    position: fixed;
+    z-index: 95;
+    width: 100vw;
+}
+
+.hakdoggers{
+    position: fixed;
+    text-align: center;
+    left: 0;
+    width: 100vw;
+    padding: 5px;
+    background: linear-gradient(to left, #FF9AA2, #FFB7B2, #FFDAC1, #E2F0CB, #B5EAD7 , #C7CEEA);
+}
+
+.logo{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 99;
+}
+
+.logo img{
+    cursor: pointer  ;
+    width: 130px;
+}
+
+.navbar1{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-right: 20px;
+    right:0;
+    position:fixed;
+    z-index: 99;
+}
+
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    transform: translateX(-10px);
+}
+
+#menuList{
+    overflow: hidden;
+    transition: 0.5s;
+    left: 0;
+}
+
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+    
+    
+nav ul li{
+list-style: none;
+display: inline-block;
+margin-right: 30px;
+}
+    
+nav ul li a{
+text-decoration: none;
+color: #000;
+font-size: 18px;
+}
+    
+nav ul li a:hover{
+color: #ffffff;
+}
+
+@media only screen and (max-width: 700px){
+    nav ul{
+        width: 100vw;
+        background: linear-gradient(to left, #FF9AA2, #FFB7B2, #FFDAC1, #E2F0CB, #B5EAD7 , #C7CEEA);
+        position: fixed;
+        top: 50px;
+    }
+
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 50px;
+    }
+
+    nav ul li a{
+        color: #fff;
+    }
+
+    .menu-icon{
+        margin-top: 10px;
+    }
+}
+
+
+
+.slideImage{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 1;
+}
+
+
+
