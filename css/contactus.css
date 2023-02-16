@@ -51,6 +51,7 @@
 
 #menuList{
     overflow: hidden;
+    margin-top: 10px;
     transition: 0.5s;
     left: 0;
 }
@@ -100,22 +101,149 @@ color: #ffffff;
     .menu-icon{
         margin-top: 10px;
     }
+    
 }
-
 
 .background{
 position: relative;
 overflow: hidden;
-
 }
 
-#slideImage{
-    height: 100vh;
+.slideImage{
+    height: 75vh;
     width: 100vw;
     object-fit: cover;
     background-position: center;
 }
 
+.overlay{
+    position: absolute;
+    height: 75vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    top:0;
+}
+
+.secondSlide{
+    margin-top: 150px;
+    margin-left: 40px;
+}
+
+
+.secondSlideDetails{
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.secondSlideDetailsLong{
+    text-align: left;
+    flex: 30%;
+}
+
+@media (max-width: 600px) {
+
+    .secondSlideDetailsLong{
+        text-align: left;
+        flex: 50%;
+    }
+
+  }
+
+.secondSlideMain{
+    margin-top: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.secondSlideContacts{    
+    text-align: left;
+    flex: 33.3%;
+}
+
+.secondSlideLogos{
+    margin-top: 25px;
+    margin-bottom: 50px;
+    height: 30px;
+    width: 30px;
+    float: left;
+}
+
+
+
+@media (max-width: 520px) {
+
+    .secondSlideMain{
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .secondSlideContacts{    
+        text-align: center;
+        flex: 50%
+    }
+
+    .emailFontSize{
+        font-size: 12px;
+    }
+
+  }
+
+
+.googleMaps{
+    margin-top: 80px;
+    position: relative;
+    text-align: center;
+}
+
+
+@media (max-width: 700px) {
+
+    .googleMaps{
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+        overflow:hidden;
+    }
+
+  }
+
+.footerskie{
+    margin-top: 150px;
+}
+
+.footerBackground{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    background-position: center;
+}
+
+.footerBackground{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.footerLogo{
+    width: 250px;
+    overflow: clip;
+}
+
+.textFooter{
+margin-right: 20px;
+flex: 30%;
+}
+
+@media (max-width: 600px) {
+
+    .footerLogo{
+        width: 100vw;
+    }
+
+  }
 
 
 
