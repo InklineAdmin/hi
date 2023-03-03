@@ -201,10 +201,8 @@ overflow: hidden;
 @media (max-width: 700px) {
 
     .googleMaps{
-        height: 100vh;
-        width: 100vw;
         object-fit: cover;
-        overflow:hidden;
+        overflow: hidden;
     }
 
   }
@@ -213,15 +211,15 @@ overflow: hidden;
     margin-top: 150px;
 }
 
-.footerBackground{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: absolute;
-    background-position: center;
-}
+
+
 
 .footerBackground{
+    height: 100vh;
+    object-fit: cover;
+    position: relative;
+    background-position: center;
+    width: 100%;
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
     flex-wrap: wrap;
     display: flex;
@@ -233,19 +231,39 @@ overflow: hidden;
 }
 
 .textFooter{
-margin-right: 20px;
+position: absolute;
+margin-top: 30px;
+margin-left: 30px;
+text-align: center;
 flex: 30%;
 }
 
-@media (max-width: 600px) {
+.allRightsReserved{
+    position: relative;
+    z-index: 999;
+    transform: translateY(650px);
+}
+
+@media (max-width: 1000px) {
 
     .footerLogo{
-        width: 100vw;
+        width: 100%;
+    }
+
+    .footerBackground{
+        height: 160vh;
+        width: 100%;
+    }
+
+    .textFooter{
+        margin-left: 0;
+    }
+
+    .allRightsReserved{
+        transform: translateY(1000px);
     }
 
   }
-
-
 
 
 
